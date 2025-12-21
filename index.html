@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>21 Card Magic Trick</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="table">
+        <h1>21 Card Mind Reader</h1>
+        <p id="instruction">Keep a number (1-21) in your mind.</p>
+        
+        <div id="game-ui">
+            <div class="game-area">
+                <div class="column-container" onclick="handleChoice('A')">
+                    <h3>Row A</h3>
+                    <div id="pile-A" class="pile"></div>
+                </div>
+                <div class="column-container" onclick="handleChoice('B')">
+                    <h3>Row B</h3>
+                    <div id="pile-B" class="pile"></div>
+                </div>
+                <div class="column-container" onclick="handleChoice('C')">
+                    <h3>Row C</h3>
+                    <div id="pile-C" class="pile"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="result-screen" class="hidden">
+            <h2 id="final-text"></h2>
+            <div id="final-card-display"></div>
+            <button class="play-again" onclick="location.reload()">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
