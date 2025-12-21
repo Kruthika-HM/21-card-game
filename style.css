@@ -1,0 +1,42 @@
+body { background-color: #0e5a1e; color: white; font-family: sans-serif; text-align: center; }
+.table { margin-top: 50px; }
+.hidden { display: none !important; }
+
+.game-area { display: flex; flex-direction: column; gap: 20px; align-items: center; margin-top: 20px; }
+.column-container { display: flex; align-items: center; width: 800px; background: rgba(0,0,0,0.2); border-radius: 10px; cursor: pointer; padding: 10px; }
+.column-container h3 { width: 100px; margin: 0; }
+.pile { position: relative; height: 110px; width: 100%; }
+
+.card {
+    position: absolute;
+    width: 70px;
+    height: 100px;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    border: 1px solid #999;
+    animation: dealIn 0.5s ease-out forwards;
+}
+
+@keyframes dealIn { from { transform: translateX(-50px); opacity: 0; } to { opacity: 1; } }
+
+.play-again { margin-top: 20px; padding: 10px 20px; cursor: pointer; font-size: 18px; }
+
+#final-card-display {
+    width: 100px;
+    height: 140px;
+    background: white;
+    color: red;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.5);
+}
